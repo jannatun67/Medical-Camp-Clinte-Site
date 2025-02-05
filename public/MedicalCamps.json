@@ -1,0 +1,72 @@
+[
+  {
+    "CampName": "Health & Wellness Camp",
+    "Image": "https://i.ibb.co.com/XkdMrxM/DSC-0010.jpg",
+    "CampFees": 100,
+    "DateTime": "2025-02-10T09:00:00",
+    "Location": "Community Hall, Downtown",
+    "HealthcareProfessionalName": "Dr. Emily Carter",
+    "ParticipantCount": 0,
+    "Description": "A comprehensive health check-up and wellness guidance program."
+  },
+  {
+    "CampName": "Diabetes Screening Camp",
+    "Image": "https://i.ibb.co.com/L0sSrWM/glucose-level-blood-test-1185738340-75b803e23e9a4ce6a550cbf41c3c2972.jpg",
+    "CampFees": 50,
+    "DateTime": "2025-02-15T08:30:00",
+    "Location": "City Hospital, Block B",
+    "HealthcareProfessionalName": "Dr. Rajiv Mehta",
+    "ParticipantCount": 0,
+    "Description": "A camp focusing on early detection and management of diabetes."
+  },
+  {
+    "CampName": "Heart Health Check-Up",
+    "Image": "https://i.ibb.co.com/WzvsgrG/What-The-Research-Says-About-Womens-Heart-Health-And-The-Impact-Of-Stress.webp",
+    "CampFees": 150,
+    "DateTime": "2025-02-20T10:00:00",
+    "Location": "Cardiology Center, Main Street",
+    "HealthcareProfessionalName": "Dr. Sophia Lee",
+    "ParticipantCount": 0,
+    "Description": "A specialized heart health screening and consultation camp."
+  },
+  {
+    "CampName": "Pediatric Health Camp",
+    "Image": "https://i.ibb.co.com/j5Y2xDn/mother-baby-stethoscope-pediatrician-healthcare-260nw-2310717197.webp",
+    "CampFees": 80,
+    "DateTime": "2025-02-25T09:30:00",
+    "Location": "Children's Clinic, Green Valley",
+    "HealthcareProfessionalName": "Dr. Karen Wilson",
+    "ParticipantCount": 0,
+    "Description": "Health check-up and wellness tips for children."
+  },
+  {
+    "CampName": "Dental Care Camp",
+    "Image": "https://i.ibb.co.com/GTPsBbk/istockphoto-1349328691-612x612.jpg",
+    "CampFees": 60,
+    "DateTime": "2025-03-01T11:00:00",
+    "Location": "Smile Dental Clinic, Oak Street",
+    "HealthcareProfessionalName": "Dr. Michael Brown",
+    "ParticipantCount": 0,
+    "Description": "Free dental check-up and oral hygiene guidance."
+  },
+  {
+    "CampName": "Eye Care Camp",
+    "Image": "https://i.ibb.co.com/8sWbJZJ/istockphoto-1189362136-612x612.jpg",
+    "CampFees": 70,
+    "DateTime": "2025-03-05T09:00:00",
+    "Location": "Vision Eye Center, Lakeview",
+    "HealthcareProfessionalName": "Dr. Lisa Cheng",
+    "ParticipantCount": 0,
+    "Description": "Comprehensive eye check-up and vision care tips."
+  },
+  {
+    "CampName": "Mental Health Awareness Camp",
+    "Image": "https://i.ibb.co.com/rwNj0KN/shutterstock-2448892167.jpg",
+    "CampFees": 120,
+    "DateTime": "2025-03-10T10:30:00",
+    "Location": "Mind Wellness Center, Hilltop",
+    "HealthcareProfessionalName": "Dr. Anil Kapoor",
+    "ParticipantCount": 0,
+    "Description": "Awareness sessions and mental health screenings for all age groups."
+  }
+]
