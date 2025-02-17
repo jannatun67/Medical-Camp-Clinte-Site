@@ -50,7 +50,8 @@ const AvailableCamps = () => {
 
   return (
     <div className="w-11/12 mx-auto py-10">
-      <div className="flex justify-between items-center">
+      <div className="md:flex justify-between  items-center">
+        <div className="flex gap-5 items-center">
         <div className="flex gap-4 text-2xl">
           <div onClick={() => handelGrid(true)} className="cursor-pointer">
             {" "}
@@ -60,9 +61,11 @@ const AvailableCamps = () => {
             <IoGrid />
           </div>
         </div>
-        <div className="text-center md:text-5xl text-2xl font-bold mb-12">
+        <div className="text-center md:text-5xl text-2xl font-bold md:mb-5">
           <h2>Available Camps</h2>
         </div>
+        </div>
+
         <div>
           <label className="input input-bordered flex items-center gap-2">
             <input
@@ -85,7 +88,7 @@ const AvailableCamps = () => {
             </svg>
           </label>
         </div>
-        <div>
+        <div className="mt-2">
         <select
         value={sortOption}
         onChange={handleSortChange}
