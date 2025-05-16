@@ -2,8 +2,13 @@ import Banner from "../../Components/Banner/Banner";
 import Featured from "../../Components/Featured/Featured";
 import PopularMedicalCamps from "../../Components/PopularMedicalCamps/PopularMedicalCamps";
 import ScaleImpact from "../../Components/ScaleImpact/ScaleImpact";
-import AboutInformeation from "./AboutInformeation";
+// import AboutInformeation from "./AboutInformeation";
+import HowItWorks from "./HowItWorks";
+import MeetOurProfessionals from "./MeetOurProfessionals";
+import OurImpact from "./OurImpact";
 import Reviews from "./Reviews";
+import StayConnected from "./StayConnected";
+import WhyJoinOurCamps from "./WhyJoinOurCamps";
 
 
 const HomePage = () => {
@@ -11,10 +16,16 @@ const HomePage = () => {
         <div>
            <Banner></Banner>
           <PopularMedicalCamps></PopularMedicalCamps>
+          <WhyJoinOurCamps></WhyJoinOurCamps>
+          <HowItWorks></HowItWorks>
+         
           <Reviews></Reviews>
-          <AboutInformeation></AboutInformeation>
+           <MeetOurProfessionals></MeetOurProfessionals>
+           <OurImpact></OurImpact>
+          {/* <AboutInformeation></AboutInformeation> */}
           <Featured></Featured>
           <ScaleImpact></ScaleImpact>
+          <StayConnected></StayConnected>
         </div>
     );
 };
