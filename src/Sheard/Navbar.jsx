@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" sticky z-20 top-0 bg-base-100">
+    <div className=" sticky z-20 top-0 bg-gray-900 text-gray-300 ">
       <div className="navbar  w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -86,7 +86,7 @@ const Navbar = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu bg-base-100 rounded-box space-y-2 z-[1] w-52 p-2 shadow"
+                  className="dropdown-content menu bg-gray-900 text-white rounded-box space-y-2 z-[1] w-52 p-2 shadow"
                 >
                   <li>
                     <p>{user?.displayName}</p>
@@ -110,7 +110,7 @@ const Navbar = () => {
             <>
               <Link
                 to="/login"
-                className="btn text-white bg-[#578E7E] hover:bg-[#219B9D]"
+              
               ></Link>
             </>
           )}

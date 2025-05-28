@@ -13,18 +13,17 @@ import WhyJoinOurCamps from "./WhyJoinOurCamps";
 
 const HomePage = () => {
     return (
-        <div>
+        <div >
            <Banner></Banner>
-          <PopularMedicalCamps></PopularMedicalCamps>
+         <div className="w-11/12 mx-auto">
+             <PopularMedicalCamps></PopularMedicalCamps>
           <WhyJoinOurCamps></WhyJoinOurCamps>
           <HowItWorks></HowItWorks>
          
           <Reviews></Reviews>
            <MeetOurProfessionals></MeetOurProfessionals>
            <OurImpact></OurImpact>
-          {/* <AboutInformeation></AboutInformeation> */}
-          <Featured></Featured>
-          <ScaleImpact></ScaleImpact>
+         </div>
           <StayConnected></StayConnected>
         </div>
     );

@@ -104,13 +104,13 @@ const AvailableCamps = () => {
       <div
         className={`grid md:grid-cols-2 ${
           grid ? "lg:grid-cols-3" : "lg:grid-cols-2"
-        } grid-cols-1 gap-3`}
+        } grid-cols-1 gap-3 mt-10`}
       >
         {...camps?.map((camp) => (
           <div key={camp?._id} className="card bg-base-100  shadow-xl">
             <figure>
               <img
-                className="h-[300px] w-[500px] object-cover"
+                className="h-[200px] w-[500px] object-cover"
                 src={camp?.photo}
                 alt="camp"
               />
@@ -131,7 +131,7 @@ const AvailableCamps = () => {
                 </h3>
               </div>
 
-              <div className="flex justify-between items-center gap-2">
+              <div className="flex justify-items-end items-center gap-2">
                 <p className="text-gray-500 font-semibold">{camp?.date}</p>
                 <p className="text-gray-500 font-semibold">
                   {camp?.participantCount}
@@ -140,7 +140,7 @@ const AvailableCamps = () => {
 
               <div className="card-actions justify-end">
                 <Link to={`/camp-details/${camp?._id}`}>
-                  <button className="btn  bg-[#578E7E] hover:bg-[#219B9D] text-white">
+                  <button className="btn  bg-indigo-600 hover:bg-indigo-800 text-white">
                     Camp Details
                   </button>
                 </Link>
