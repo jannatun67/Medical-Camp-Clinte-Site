@@ -38,15 +38,15 @@ const Navbar = () => {
   return (
     <nav className={`sticky z-50 top-0 w-full transition-all duration-300 ${
       isScrolled 
-        ? "bg-gray-900/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)]" 
-        : "bg-gray-900"
+        ? "bg-[#0F766E]/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)]" 
+        : "bg-[#0F766E]"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-2 md:gap-3 group">
-            <div className="relative overflow-hidden rounded-full ring-2 ring-[#578E7E]/30 group-hover:ring-[#578E7E] transition-all duration-300">
+            <div className="relative overflow-hidden rounded-full ring-2 ring-[#F97316]/30 group-hover:ring-[#F97316] transition-all duration-300">
               <img 
                 className="w-10 h-10 md:w-14 md:h-14 object-cover transition-transform duration-500 group-hover:scale-110" 
                 src={logo} 
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-sm md:text-xl lg:text-2xl text-white leading-tight">
-                Medical<span className="text-[#578E7E]">Camp</span>
+                Medical<span className="text-[#F97316]">Camp</span>
               </span>
               <span className="text-[10px] md:text-xs text-gray-400 hidden sm:block">Care & Support</span>
             </div>
@@ -70,13 +70,13 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `relative px-4 py-2 rounded-lg font-medium transition-all duration-200 group overflow-hidden ${
                     isActive
-                      ? "text-[#578E7E]"
+                      ? "text-[#F97316]"
                       : "text-gray-300 hover:text-white"
                   }`
                 }
               >
                 <span className="relative z-10">{link.label}</span>
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#578E7E] transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100 ${({ isActive }) => isActive ? 'scale-x-100' : ''}`}></span>
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#F97316] transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100 ${({ isActive }) => isActive ? 'scale-x-100' : ''}`}></span>
               </NavLink>
             ))}
           </div>
@@ -90,10 +90,10 @@ const Navbar = () => {
                   {/* Dashboard Button */}
                   <Link
                     to={isAdmin ? "/dashboard/addCamp" : "/dashboard/register"}
-                    className="relative p-2.5 rounded-xl bg-gradient-to-r from-[#578E7E]/10 to-[#219B9D]/10 hover:from-[#578E7E]/20 hover:to-[#219B9D]/20 transition-all duration-200 group"
+                    className="relative p-2.5 rounded-xl bg-[#F97316]/10 hover:bg-[#F97316]/20 transition-all duration-200 group"
                     title="Dashboard"
                   >
-                    <FaTachometerAlt className="text-[#578E7E] text-xl group-hover:scale-110 transition-transform duration-200" />
+                    <FaTachometerAlt className="text-[#F97316] text-xl group-hover:scale-110 transition-transform duration-200" />
                     <span className="absolute -top-1 -right-1 w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                   </Link>
 
@@ -114,12 +114,12 @@ const Navbar = () => {
                     >
                       <div className="relative">
                         <img
-                          className="w-10 h-10 rounded-full ring-2 ring-[#578E7E] object-cover transition-all duration-300 group-hover:ring-4 group-hover:scale-105"
+                          className="w-10 h-10 rounded-full ring-2 ring-[#F97316] object-cover transition-all duration-300 group-hover:ring-4 group-hover:scale-105"
                           src={user?.photoURL || "https://via.placeholder.com/40"}
                           referrerPolicy="no-referrer"
                           alt={user?.displayName}
                         />
-                        <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full ring-2 ring-gray-900"></span>
+                        <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full ring-2 ring-[#0F766E]"></span>
                       </div>
                       <div className="text-left hidden lg:block">
                         <p className="text-xs text-gray-400">Welcome back,</p>
@@ -132,7 +132,7 @@ const Navbar = () => {
                     {/* Profile Dropdown Menu */}
                     {isProfileMenuOpen && (
                       <div className="absolute right-0 mt-3 w-64 bg-gray-800 rounded-xl shadow-2xl border border-gray-700 overflow-hidden animate-[slideDown_0.2s_ease-out]">
-                        <div className="p-4 bg-gradient-to-r from-[#578E7E]/20 to-[#219B9D]/20 border-b border-gray-700">
+                        <div className="p-4 bg-gradient-to-r from-[#0F766E]/20 to-[#F97316]/20 border-b border-gray-700">
                           <p className="text-white font-semibold">{user?.displayName || "User"}</p>
                           <p className="text-sm text-gray-400 truncate">{user?.email}</p>
                         </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
                             className="flex items-center gap-3 px-4 py-2.5 text-gray-300 hover:text-white hover:bg-gray-700 rounded-lg transition-all duration-200"
                             onClick={() => setIsProfileMenuOpen(false)}
                           >
-                            <FaTachometerAlt className="text-[#578E7E]" />
+                            <FaTachometerAlt className="text-[#F97316]" />
                             <span>Dashboard</span>
                           </Link>
                           <button
@@ -170,13 +170,13 @@ const Navbar = () => {
               <div className="flex items-center gap-2 sm:gap-3">
                 <Link
                   to="/login"
-                  className="px-4 py-2 sm:px-6 sm:py-2.5 text-sm font-medium text-white bg-gradient-to-r from-[#578E7E] to-[#219B9D] rounded-xl hover:shadow-lg hover:shadow-[#578E7E]/30 hover:scale-105 transition-all duration-200"
+                  className="px-4 py-2 sm:px-6 sm:py-2.5 text-sm font-medium text-white bg-[#0F766E] rounded-xl hover:bg-[#115E59] hover:shadow-lg hover:shadow-[#0F766E]/30 hover:scale-105 transition-all duration-200"
                 >
                   Login
                 </Link>
                 <Link
                   to="/signUp"
-                  className="px-4 py-2 sm:px-6 sm:py-2.5 text-sm font-medium text-[#578E7E] bg-transparent border-2 border-[#578E7E] rounded-xl hover:bg-[#578E7E] hover:text-white hover:scale-105 transition-all duration-200"
+                  className="px-4 py-2 sm:px-6 sm:py-2.5 text-sm font-medium text-white bg-transparent border-2 border-[#0F766E] rounded-xl hover:bg-[#0F766E] hover:text-white hover:scale-105 transition-all duration-200"
                 >
                   Register
                 </Link>
@@ -208,7 +208,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                     isActive
-                      ? "bg-gradient-to-r from-[#578E7E] to-[#219B9D] text-white shadow-lg"
+                      ? "bg-gradient-to-r from-[#0F766E] to-[#F97316] text-white shadow-lg"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white"
                   }`
                 }
@@ -223,7 +223,7 @@ const Navbar = () => {
                 <div className="px-4 py-3 border-t border-gray-700">
                   <div className="flex items-center gap-3">
                     <img
-                      className="w-10 h-10 rounded-full ring-2 ring-[#578E7E]"
+                      className="w-10 h-10 rounded-full ring-2 ring-[#F97316]"
                       src={user?.photoURL || "https://via.placeholder.com/40"}
                       alt=""
                     />
@@ -238,7 +238,7 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded-lg transition-all duration-200"
                 >
-                  <FaTachometerAlt className="text-[#578E7E]" />
+                  <FaTachometerAlt className="text-[#F97316]" />
                   <span>Dashboard</span>
                 </Link>
                 <button
@@ -268,9 +268,6 @@ const Navbar = () => {
             opacity: 1;
             transform: translateY(0);
           }
-        }
-        .animate-\\[slideDown_0\\.2s_ease-out\\] {
-          animation: slideDown 0.2s ease-out;
         }
       `}</style>
     </nav>

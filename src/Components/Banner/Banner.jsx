@@ -14,42 +14,42 @@ const Banner = () => {
         {
             id: 1,
             image: banner1,
-            title: "Modern Living Room",
-            subtitle: "Elegant & Comfortable Design",
-            description: "Transform your space with our premium furniture collection",
-            color: "from-orange-500 to-pink-500"
+            title: "Quality Healthcare",
+            subtitle: "For Everyone",
+            description: "Access affordable medical care at our community camps",
+            color: "from-[#0F766E] to-[#F97316]"
         },
         {
             id: 2,
             image: banner2,
-            title: "Luxury Bedroom",
-            subtitle: "Sweet Dreams Start Here",
-            description: "Experience ultimate comfort with our bedroom sets",
-            color: "from-blue-500 to-purple-500"
+            title: "Expert Doctors",
+            subtitle: "Certified Professionals",
+            description: "Get consultations from experienced healthcare providers",
+            color: "from-[#F97316] to-[#0F766E]"
         },
         {
             id: 3,
             image: banner3,
-            title: "Modern Kitchen",
-            subtitle: "Heart of Your Home",
-            description: "Stylish and functional kitchen solutions",
-            color: "from-green-500 to-teal-500"
+            title: "Free Checkups",
+            subtitle: "Regular Health Camps",
+            description: "Join our free medical camps across the country",
+            color: "from-[#0F766E] to-[#F97316]"
         },
         {
             id: 4,
             image: banner4,
-            title: "Home Office",
-            subtitle: "Work in Style",
-            description: "Ergonomic furniture for productive workdays",
-            color: "from-purple-500 to-indigo-500"
+            title: "Community Care",
+            subtitle: "Serving Together",
+            description: "Making healthcare accessible to underserved communities",
+            color: "from-[#F97316] to-[#0F766E]"
         },
         {
             id: 5,
             image: banner5,
-            title: "Dining Collection",
-            subtitle: "Memorable Moments",
-            description: "Create lasting memories with our dining sets",
-            color: "from-red-500 to-yellow-500"
+            title: "Wellness Programs",
+            subtitle: "Preventive Care",
+            description: "Stay healthy with our wellness and awareness programs",
+            color: "from-[#0F766E] to-[#F97316]"
         }
     ];
 
@@ -77,7 +77,7 @@ const Banner = () => {
                         />
                         
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#0F766E]/70 via-[#0F766E]/50 to-transparent"></div>
                         
                         {/* Content Container */}
                         <div className="absolute inset-0 flex items-center">
@@ -86,7 +86,7 @@ const Banner = () => {
                                     {/* Animated content */}
                                     <div className="animate__animated animate__fadeInUp">
                                         {/* Subtitle with gradient */}
-                                        <span className={`inline-block px-4 py-1 mb-4 text-sm font-semibold text-white bg-gradient-to-r ${item.color} rounded-full`}>
+                                        <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold text-white bg-[#F97316] rounded-full">
                                             {item.subtitle}
                                         </span>
                                         
@@ -102,10 +102,10 @@ const Banner = () => {
                                         
                                         {/* Buttons */}
                                         <div className="flex flex-wrap gap-4">
-                                            <button className={`px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r ${item.color} text-white font-semibold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base`}>
-                                                Shop Now
+                                            <button className="px-6 md:px-8 py-3 md:py-4 bg-[#F97316] text-white font-semibold rounded-lg hover:bg-[#EA580C] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base">
+                                                Join a Camp
                                             </button>
-                                            <button className="px-6 md:px-8 py-3 md:py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-white/30 transition-all duration-300 text-sm md:text-base border border-white/30">
+                                            <button className="px-6 md:px-8 py-3 md:py-4 bg-[#0F766E]/20 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-[#0F766E]/30 transition-all duration-300 text-sm md:text-base border border-white/30">
                                                 Learn More
                                             </button>
                                         </div>
@@ -117,14 +117,14 @@ const Banner = () => {
                         {/* Side Badge */}
                         <div className="absolute top-8 right-8 hidden md:block">
                             <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20">
-                                <span className="text-white font-semibold">New Collection</span>
+                                <span className="text-white font-semibold">Free Registration</span>
                             </div>
                         </div>
                     </div>
                 ))}
             </Carousel>
 
-            {/* Custom styles for carousel dots and arrows using Tailwind */}
+            {/* Custom styles for carousel dots and arrows */}
             <style jsx global>{`
                 .banner-carousel .carousel .control-dots {
                     bottom: 30px;
@@ -136,7 +136,7 @@ const Banner = () => {
                 }
                 
                 .banner-carousel .carousel .control-dots .dot.selected {
-                    @apply w-8 bg-gradient-to-r from-orange-500 to-pink-500 opacity-100;
+                    @apply w-8 bg-[#F97316] opacity-100;
                 }
                 
                 .banner-carousel .carousel .control-arrow {
@@ -149,7 +149,7 @@ const Banner = () => {
                 }
                 
                 .banner-carousel .carousel .control-arrow:hover {
-                    @apply bg-gradient-to-r from-orange-500 to-pink-500 !important;
+                    @apply bg-[#F97316] !important;
                 }
                 
                 .banner-carousel .carousel .control-prev {
