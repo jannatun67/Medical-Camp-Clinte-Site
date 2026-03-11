@@ -90,14 +90,15 @@ const PopularMedicalCamps = () => {
                 </div>
 
                 {/* View Details Button */}
-                <Link to={`/camp/${camp?._id}`}>
-                  <button className="w-full bg-gradient-to-r from-[#0F766E] to-[#F97316] text-white py-3 rounded-xl font-semibold hover:from-[#115E59] hover:to-[#EA580C] transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
-                    View Details
-                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </button>
-                </Link>
+                 <Link to={`/camp-details/${camp?._id}`}>
+                    <button className="w-full bg-gradient-to-r from-[#0F766E] to-[#F97316] text-white py-3 rounded-xl font-semibold hover:from-[#115E59] hover:to-[#EA580C] transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group/btn">
+                      View Details
+                      <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </button>
+                  </Link>
+
               </div>
             </div>
           ))}

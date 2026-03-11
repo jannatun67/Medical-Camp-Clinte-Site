@@ -252,6 +252,7 @@ const AvailableCamps = () => {
                       </svg>
                     </button>
                   </Link>
+                  
                 </div>
 
                 {/* Decorative Elements */}
