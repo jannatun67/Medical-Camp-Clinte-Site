@@ -5,7 +5,7 @@
 https://medical-camp-server-site.onrender.com
 
 ### Live Site URL:  
-[Medical Camps Platform](https://medical-camp-9423e.web.app)  
+[Medical Camps Platform](https://medical-camp-9423e.web.app/)  
 ### GitHub Link:
 (https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-jannatun67.git)
 ### Server GitHub Link:
